@@ -15,6 +15,7 @@ LaraVueShop: Laravel &amp; Vue.js eCommerce - Power your online business with th
 ![GitLab](https://img.icons8.com/color/48/000000/gitlab.png)
 
 
+
 LaraVueShop is a powerful eCommerce platform built with Laravel and Vue.js. This repository provides a comprehensive solution for creating and managing an online store. It leverages the robustness of Laravel's backend framework and the interactivity of Vue.js on the frontend, offering a seamless user experience and advanced features.
 
 ## Features
