@@ -26,7 +26,7 @@ LaraVueShop is a powerful eCommerce platform built with Laravel and Vue.js. This
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/LaraVueShop.git`
+1. Clone the repository: `git clone https://github.com/manou141/LaraVueShop.git`
 2. Navigate to the project directory: `cd LaraVueShop`
 3. Install dependencies: `composer install` and `npm install`
 4. Configure the `.env` file with your database and other settings
