@@ -272,7 +272,10 @@
                                     <div class="col-md-4">
                                         <div class="single-product-items">
                                             <div class="product-item-image">
-                                                <a href="#"><img src="{{$product->image_name}}" alt="Product"></a>
+                                                <a href="#">
+                                                    <img src="{{$product->image_name}}" alt="Product" height="270px">
+
+                                                </a>
                                                 <div class="product-discount-tag">
                                                     <p>-$50</p>
                                                 </div>
