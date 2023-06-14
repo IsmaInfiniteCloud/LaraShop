@@ -97,7 +97,7 @@
                                 @if (Route::has('login'))
                                 @auth
                                 <li class="nav-item">
-                                    <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                                    <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Cart</a>
                                 </li>
                                 @else
                                 <li class="nav-item">
@@ -267,111 +267,31 @@
                         <div class="tab-pane fade show active" id="v-pills-furniture" role="tabpanel" aria-labelledby="v-pills-furniture-tab">
                             <div class="product-items mt-30">
                                 <div class="row product-items-active">
+                                    @if(isset($products))
+                                    @foreach($products as $product)
                                     <div class="col-md-4">
                                         <div class="single-product-items">
                                             <div class="product-item-image">
-                                                <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
+                                                <a href="#"><img src="{{$product->image_name}}" alt="Product"></a>
                                                 <div class="product-discount-tag">
-                                                    <p>-60%</p>
+                                                    <p>-$50</p>
                                                 </div>
                                             </div>
                                             <div class="product-item-content text-center mt-30">
-                                                <h5 class="product-title"><a href="#">Fibre Chair</a></h5>
+                                                <h5 class="product-title"><a href="#">{{$product->name}}</a></h5>
                                                 <ul class="rating">
                                                     <li><i class="lni-star-filled"></i></li>
                                                     <li><i class="lni-star-filled"></i></li>
                                                     <li><i class="lni-star-filled"></i></li>
                                                     <li><i class="lni-star-filled"></i></li>
                                                 </ul>
-                                                <span class="regular-price">$49.00</span>
-                                                <span class="discount-price">$69.00</span>
+                                                <span class="regular-price">{{$product->sale_price}}</span>
+                                                <span class="discount-price">{{$product->price}}</span>
                                             </div>
                                         </div> <!-- single product items -->
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="single-product-items">
-                                            <div class="product-item-image">
-                                                <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                                <div class="product-discount-tag">
-                                                    <p>-20%</p>
-                                                </div>
-                                            </div>
-                                            <div class="product-item-content text-center mt-30">
-                                                <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                                <ul class="rating">
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                </ul>
-                                                <span class="regular-price">$129.00</span>
-                                                <span class="discount-price">$159.00</span>
-                                            </div>
-                                        </div> <!-- single product items -->
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="single-product-items">
-                                            <div class="product-item-image">
-                                                <a href="#"><img src="assets/images/product/p-3.jpg" alt="Product"></a>
-                                                <div class="product-discount-tag">
-                                                    <p>-10%</p>
-                                                </div>
-                                            </div>
-                                            <div class="product-item-content text-center mt-30">
-                                                <h5 class="product-title"><a href="#">Classic Wardrobe</a></h5>
-                                                <ul class="rating">
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star"></i></li>
-                                                </ul>
-                                                <span class="regular-price">$89.00</span>
-                                                <span class="discount-price">$129.00</span>
-                                            </div>
-                                        </div> <!-- single product items -->
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="single-product-items">
-                                            <div class="product-item-image">
-                                                <a href="#"><img src="assets/images/product/p-1.jpg" alt="Product"></a>
-                                                <div class="product-discount-tag">
-                                                    <p>-60%</p>
-                                                </div>
-                                            </div>
-                                            <div class="product-item-content text-center mt-30">
-                                                <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                                <ul class="rating">
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                </ul>
-                                                <span class="regular-price">$59.00</span>
-                                                <span class="discount-price">$69.00</span>
-                                            </div>
-                                        </div> <!-- single product items -->
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="single-product-items">
-                                            <div class="product-item-image">
-                                                <a href="#"><img src="assets/images/product/p-2.jpg" alt="Product"></a>
-                                                <div class="product-discount-tag">
-                                                    <p>-60%</p>
-                                                </div>
-                                            </div>
-                                            <div class="product-item-content text-center mt-30">
-                                                <h5 class="product-title"><a href="#">Touchwood Chair</a></h5>
-                                                <ul class="rating">
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                    <li><i class="lni-star-filled"></i></li>
-                                                </ul>
-                                                <span class="regular-price">$59.00</span>
-                                                <span class="discount-price">$69.00</span>
-                                            </div>
-                                        </div> <!-- single product items -->
-                                    </div>
+                                    @endforeach
+                                    @endif
                                 </div> <!-- row -->
                             </div> <!-- product items -->
                         </div> <!-- tab pane -->
