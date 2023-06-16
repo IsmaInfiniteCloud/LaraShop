@@ -1157,3 +1157,7 @@
 
 <!--====== BACK TO TOP PART ENDS ======-->
 @endsection
+
+@section('scripts')
+
+@endsection

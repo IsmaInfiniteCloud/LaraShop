@@ -10,7 +10,7 @@
 
     <!--====== Title ======-->
     <title>Furnish - Furniture and Decor Website Template</title>
-
+    <script src="{{asset('css/app.css')}}" defer></script>
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
 
@@ -148,6 +148,7 @@
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
 
+    @yield('scripts')
 </body>
 
 </html>
