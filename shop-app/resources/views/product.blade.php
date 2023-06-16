@@ -273,8 +273,7 @@
                                         <div class="single-product-items">
                                             <div class="product-item-image">
                                                 <a href="#">
-                                                    <img src="{{$product->image_name}}" alt="Product" height="270px">
-
+                                                    <img src="{{$product->image_name}}" alt="Product" height="320px">
                                                 </a>
                                                 <div class="product-discount-tag">
                                                     <p>-$50</p>
