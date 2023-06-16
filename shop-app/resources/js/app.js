@@ -15,8 +15,9 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
+import ExampleComponent from './components/AddToCart.vue';
+//app.component('example-component', ExampleComponent);
+Vue.component('add-to-cart-button', require('./components/AddToCart.vue').default);
 
 /**
  * The following block of code may be used to automatically register your
