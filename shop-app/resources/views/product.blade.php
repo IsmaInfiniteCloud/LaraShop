@@ -290,6 +290,7 @@
                                                 <span class="regular-price">{{$product->sale_price}}</span>
                                                 <span class="discount-price">{{$product->price}}</span>
                                             </div>
+                                            <hr><button class="btn btn-warning">Add to cart</button>
                                         </div> <!-- single product items -->
                                     </div>
                                     @endforeach
