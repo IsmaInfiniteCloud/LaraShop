@@ -38,7 +38,7 @@
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-
+    @vite(['resources/js/app.js'])
 </head>
 
 <body>
@@ -121,8 +121,9 @@
 
 
     <!--====== HEADER PART ENDS ======-->
-
+    <div id="app">
     @yield('content')
+    </div>
 
     <!--====== jquery js ======-->
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
